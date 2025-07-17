@@ -7,12 +7,12 @@ public class RecursiveTest {
     
     @Test
     public void test1(){
-        assertEquals(Main.count8(88188), 3);
+        assertEquals(Main.count8(8818), 4);
     }
 
     @Test
     public void test2(){
-        // assertEquals(Main.count8(88188), 3);
+        assertEquals(5, Main.countHi("hihihihihi"));
     }
 
     @Test
@@ -31,4 +31,4 @@ public class RecursiveTest {
     }
 }
 
-//write method in main 
+//write method in main
