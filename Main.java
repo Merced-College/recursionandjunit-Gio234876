@@ -47,5 +47,27 @@ public class Main{
             return countHi2(str.substring(1));
         }
     }
+    //for the fourth Junit test
+    public static int strCount(String str, String sub) {
+        if (str.length() < sub.length()) {
+            return 0;
+        }
+        if (str.substring(0, sub.length()).equals(sub)) {
+            return 1 + strCount(str.substring(sub.length()), sub);
+        } else {
+            return strCount(str.substring(1), sub);
+        }
+    }
+    //for the fifth Junit test
+    public static String stringClean(String str) {
+        if (str.length() <= 1) {
+            return str;
+        }
+        if (str.charAt(0) == str.charAt(1)) {
+            return stringClean(str.substring(1));
+        } else {
+            return str.charAt(0) + stringClean(str.substring(1));
+        }
+    }
 }
 
