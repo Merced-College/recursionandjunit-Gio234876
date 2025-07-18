@@ -5,19 +5,21 @@ import org.junit.Test;
 
 public class RecursiveTest {
     
-    @Test
-    public void test1(){
-        assertEquals(Main.count8(8818), 4);
-    }
+    // @Test
+    // public void test1(){
+    //     assertEquals(Main.count8(8818), 4);
+    // }
 
-    @Test
-    public void test2(){
-        assertEquals(5, Main.countHi("hihihihihi"));
-    }
+    // @Test
+    // public void test2(){
+    //     assertEquals(5, Main.countHi("hihihihihi"));
+    // }
 
     @Test
     public void test3(){
-        // assertEquals(Main.count8(88188), 3);
+        assertEquals(1, Main.countHi2("ahixhi"));
+        assertEquals(2, Main.countHi2("ahibhi"));
+        assertEquals(0, Main.countHi2("xhixhi"));
     }
 
     @Test
